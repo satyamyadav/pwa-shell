@@ -1,12 +1,12 @@
 const CACHE_NAME = '{{cache}}';
 
 const CRITICAL = [
-  '/scripts/skeleton.js',
-  '/scripts/shell.js'
+  'scripts/skeleton.js',
+  'scripts/shell.js'
 ];
 
 const NON_CRITICAL = [
-  '/styles/images/favicon.png'
+  'styles/images/favicon.png'
 ];
 
 const addToCache = (request, response) => {
