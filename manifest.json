@@ -5,8 +5,8 @@
   "background_color": "#01579b",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/pwa-shell",
+  "start_url": "/pwa-shell",
   "icons": [{
       "src": "styles/icons/icon-72x72.png",
       "sizes": "72x72",
