@@ -171,15 +171,15 @@ appShell.factory('boardView', function(container) {
       return navigator.getBattery().then(battery => {
         battery.addEventListener('chargingchange', this.batteryUpdate.bind(this));
         battery.addEventListener('levelchange', this.batteryUpdate.bind(this));
-
         this.render(battery);
       });
 
     }
 
-    batteryUpdate() {
-      console.log('update battery');
-      this.loadData();
+    batteryUpdate(e) {
+      console.log('update battery', e);
+      e.preventDefault();
+      this.render(e.target);
     }
 
     render(data) {
